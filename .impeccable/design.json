@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-27T20:15:00+08:00",
+  "title": "Design System: Parallel",
+  "extensions": {
+    "colorMeta": {
+      "tally-red": {
+        "role": "primary",
+        "displayName": "Tally Red",
+        "canonical": "oklch(55% 0.22 27)",
+        "tonalRamp": [
+          "oklch(22% 0.09 27)",
+          "oklch(32% 0.14 27)",
+          "oklch(44% 0.19 27)",
+          "oklch(55% 0.22 27)",
+          "oklch(64% 0.20 27)",
+          "oklch(75% 0.13 27)",
+          "oklch(87% 0.06 27)",
+          "oklch(95% 0.02 27)"
+        ]
+      },
+      "tally-red-deep": {
+        "role": "primary",
+        "displayName": "Tally Red Deep",
+        "canonical": "oklch(47% 0.19 27)",
+        "tonalRamp": [
+          "oklch(20% 0.08 27)",
+          "oklch(29% 0.13 27)",
+          "oklch(38% 0.17 27)",
+          "oklch(47% 0.19 27)",
+          "oklch(58% 0.17 27)",
+          "oklch(72% 0.11 27)",
+          "oklch(86% 0.05 27)",
+          "oklch(95% 0.02 27)"
+        ]
+      },
+      "tally-red-bright": {
+        "role": "primary",
+        "displayName": "Tally Red Bright",
+        "canonical": "oklch(64% 0.23 26)",
+        "tonalRamp": [
+          "oklch(24% 0.09 26)",
+          "oklch(36% 0.15 26)",
+          "oklch(50% 0.20 26)",
+          "oklch(64% 0.23 26)",
+          "oklch(73% 0.17 26)",
+          "oklch(82% 0.10 26)",
+          "oklch(90% 0.04 26)",
+          "oklch(96% 0.015 26)"
+        ]
+      },
+      "tally-red-wash": {
+        "role": "primary",
+        "displayName": "Tally Red Wash",
+        "canonical": "oklch(95% 0.02 22)",
+        "tonalRamp": [
+          "oklch(25% 0.06 22)",
+          "oklch(38% 0.08 22)",
+          "oklch(52% 0.09 22)",
+          "oklch(66% 0.07 22)",
+          "oklch(78% 0.05 22)",
+          "oklch(88% 0.03 22)",
+          "oklch(95% 0.02 22)",
+          "oklch(98% 0.008 22)"
+        ]
+      },
+      "carbon-ink": {
+        "role": "neutral",
+        "displayName": "Carbon Ink",
+        "canonical": "oklch(17% 0.004 285)",
+        "tonalRamp": [
+          "oklch(14% 0.004 285)",
+          "oklch(22% 0.004 285)",
+          "oklch(34% 0.004 285)",
+          "oklch(48% 0.004 285)",
+          "oklch(62% 0.003 285)",
+          "oklch(76% 0.003 285)",
+          "oklch(88% 0.002 285)",
+          "oklch(96% 0.002 285)"
+        ]
+      },
+      "paper-canvas": {
+        "role": "neutral",
+        "displayName": "Paper Canvas",
+        "canonical": "oklch(97% 0.006 90)",
+        "tonalRamp": [
+          "oklch(18% 0.006 90)",
+          "oklch(32% 0.007 90)",
+          "oklch(48% 0.008 90)",
+          "oklch(64% 0.008 90)",
+          "oklch(78% 0.007 90)",
+          "oklch(88% 0.007 90)",
+          "oklch(94% 0.007 90)",
+          "oklch(97% 0.006 90)"
+        ]
+      },
+      "screening-black": {
+        "role": "neutral",
+        "displayName": "Screening Black",
+        "canonical": "oklch(15% 0.004 285)",
+        "tonalRamp": [
+          "oklch(12% 0.004 285)",
+          "oklch(18% 0.005 285)",
+          "oklch(26% 0.006 285)",
+          "oklch(38% 0.006 285)",
+          "oklch(54% 0.005 285)",
+          "oklch(70% 0.004 285)",
+          "oklch(84% 0.003 285)",
+          "oklch(95% 0.002 285)"
+        ]
+      },
+      "signal-green": {
+        "role": "semantic",
+        "displayName": "Signal Green",
+        "canonical": "oklch(51% 0.12 155)",
+        "tonalRamp": [
+          "oklch(22% 0.06 155)",
+          "oklch(32% 0.08 155)",
+          "oklch(42% 0.10 155)",
+          "oklch(51% 0.12 155)",
+          "oklch(64% 0.11 155)",
+          "oklch(76% 0.08 155)",
+          "oklch(88% 0.04 155)",
+          "oklch(95% 0.02 155)"
+        ]
+      },
+      "tape-amber": {
+        "role": "semantic",
+        "displayName": "Tape Amber",
+        "canonical": "oklch(53% 0.13 72)",
+        "tonalRamp": [
+          "oklch(24% 0.06 72)",
+          "oklch(34% 0.09 72)",
+          "oklch(44% 0.11 72)",
+          "oklch(53% 0.13 72)",
+          "oklch(66% 0.12 72)",
+          "oklch(78% 0.09 72)",
+          "oklch(89% 0.05 72)",
+          "oklch(96% 0.02 72)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Empty-board welcome headline only." },
+      "headline": { "displayName": "Headline", "purpose": "Bulk-paste drawer and modal headings." },
+      "title": { "displayName": "Title", "purpose": "Wordmark and active lightbox clip title." },
+      "body": { "displayName": "Body", "purpose": "Instructions, modal copy, and Zod validation messages (max 62ch)." },
+      "ui": { "displayName": "UI Control", "purpose": "Buttons, navigation triggers, and category filter pills." },
+      "label": { "displayName": "Card Label", "purpose": "Single-line video titles and category tags below thumbnails." },
+      "mono-badge": { "displayName": "Mono Badge", "purpose": "2x tally pills, counters, timecodes, SAMPLE tags, and keycaps." }
+    },
+    "shadows": [
+      { "name": "tactile-lip", "value": "0 2px 0 #111113", "purpose": "Resting bottom lip on primary and secondary pill buttons." },
+      { "name": "tactile-lift", "value": "0 3px 0 #111113", "purpose": "Hover elevation on pill buttons paired with translateY(-1px)." },
+      { "name": "tally-active", "value": "0 0 0 2px #D91E18, 0 8px 20px rgba(17, 17, 19, 0.10)", "purpose": "Single active hovered 2x playing video card." },
+      { "name": "drawer", "value": "0 12px 32px rgba(17, 17, 19, 0.12)", "purpose": "Floating bulk-paste drawer and popover menus." },
+      { "name": "screening", "value": "0 24px 64px rgba(14, 14, 16, 0.55)", "purpose": "1x sound-on lightbox screening frame." }
+    ],
+    "motion": [
+      { "name": "ease-tactile", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Snappy mechanical deceleration for card tally rings and drawers." },
+      { "name": "ease-pop", "value": "cubic-bezier(0.34, 1.56, 0.64, 1)", "purpose": "Subtle playful spring on the 2x tally badge appearance." },
+      { "name": "duration-instant", "value": "110ms", "purpose": "Button press collapse and filter pill state switch." },
+      { "name": "duration-tally", "value": "160ms", "purpose": "Video card 2x hover activation and badge reveal." },
+      { "name": "duration-modal", "value": "220ms", "purpose": "Lightbox screening room open/close and bulk-paste sheet slide." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "520px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "900px" },
+      { "name": "xl", "value": "1200px" },
+      { "name": "2xl", "value": "1520px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Tactile Tally Red pill CTA for primary board actions (+ Add Clips, Add to Board).",
+      "html": "<button class=\"ds-btn-primary\"><svg width=\"15\" height=\"15\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M8 3.25V12.75M3.25 8H12.75\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg><span>Add Clips</span></button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 7px; height: 40px; padding: 0 18px; border-radius: 9999px; background: #D91E18; color: #FFFFFF; border: 1.5px solid #111113; box-shadow: 0 2px 0 #111113; font-family: Figtree, system-ui, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; transition: transform 110ms cubic-bezier(0.22, 1, 0.36, 1), background-color 110ms ease, box-shadow 110ms ease; } .ds-btn-primary:hover { background: #B51611; transform: translateY(-1px); box-shadow: 0 3px 0 #111113; } .ds-btn-primary:active { transform: translateY(2px); box-shadow: 0 0 0 #111113; } .ds-btn-primary:focus-visible { outline: 2px solid #D91E18; outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Crisp white pill with Carbon Ink outline for Import/Export JSON and secondary modal actions.",
+      "html": "<button class=\"ds-btn-secondary\">Export JSON</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; gap: 7px; height: 40px; padding: 0 16px; border-radius: 9999px; background: #FFFFFF; color: #111113; border: 1.5px solid #111113; box-shadow: 0 2px 0 #111113; font-family: Figtree, system-ui, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; transition: transform 110ms cubic-bezier(0.22, 1, 0.36, 1), background-color 110ms ease, box-shadow 110ms ease; } .ds-btn-secondary:hover { background: #ECEAE4; transform: translateY(-1px); box-shadow: 0 3px 0 #111113; } .ds-btn-secondary:active { transform: translateY(2px); box-shadow: 0 0 0 #111113; } .ds-btn-secondary:focus-visible { outline: 2px solid #D91E18; outline-offset: 2px; }"
+    },
+    {
+      "name": "Category Filter Pill",
+      "kind": "chip",
+      "refersTo": "filter-pill-active",
+      "description": "Single-select category pills with Carbon Ink active state, red tally dot, and tabular clip counts.",
+      "html": "<div class=\"ds-pill-row\"><button class=\"ds-pill ds-pill-active\" aria-pressed=\"true\"><span class=\"ds-pill-dot\"></span>All<span class=\"ds-pill-count\">48</span></button><button class=\"ds-pill\" aria-pressed=\"false\">Motion<span class=\"ds-pill-count\">16</span></button><button class=\"ds-pill\" aria-pressed=\"false\">Uncategorized<span class=\"ds-pill-count\">6</span></button></div>",
+      "css": ".ds-pill-row { display: inline-flex; gap: 8px; flex-wrap: wrap; } .ds-pill { display: inline-flex; align-items: center; gap: 7px; height: 34px; padding: 0 14px; border-radius: 9999px; border: 1px solid transparent; background: #ECEAE4; color: #4B4A4E; font-family: Figtree, system-ui, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; transition: background-color 110ms ease, color 110ms ease; } .ds-pill:hover { background: #E2DFD7; color: #111113; } .ds-pill-active { background: #111113; color: #FFFFFF; } .ds-pill-active:hover { background: #111113; color: #FFFFFF; } .ds-pill-dot { width: 6px; height: 6px; border-radius: 9999px; background: #D91E18; } .ds-pill-count { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; font-variant-numeric: tabular-nums; opacity: 0.72; } .ds-pill:focus-visible { outline: 2px solid #D91E18; outline-offset: 2px; }"
+    },
+    {
+      "name": "Video Reference Card (2x Hover Tally)",
+      "kind": "card",
+      "refersTo": "video-card",
+      "description": "Zero-chrome 16:9 clip tile at rest; lights up with Tally Red ring, 2x badge, and 3px playback bar on hover.",
+      "html": "<article class=\"ds-clip-card\" tabindex=\"0\"><div class=\"ds-clip-frame\"><div class=\"ds-clip-tally\"><span class=\"ds-tally-dot\"></span>2×</div><div class=\"ds-clip-progress\"></div></div><div class=\"ds-clip-meta\"><span class=\"ds-clip-title\">kinetic-poster-loop.mp4</span><span class=\"ds-clip-tag\">Motion</span></div></article>",
+      "css": ".ds-clip-card { width: 280px; cursor: pointer; outline: none; } .ds-clip-frame { position: relative; aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; background: linear-gradient(135deg, #232327 0%, #111113 100%); border: 1px solid #DCD9D0; transition: transform 160ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 160ms ease, border-color 160ms ease; } .ds-clip-card:hover .ds-clip-frame, .ds-clip-card:focus-visible .ds-clip-frame { transform: translateY(-2px); border-color: #D91E18; box-shadow: 0 0 0 2px #D91E18, 0 8px 20px rgba(17, 17, 19, 0.10); } .ds-clip-tally { position: absolute; top: 10px; left: 10px; display: inline-flex; align-items: center; gap: 5px; padding: 5px 8px; border-radius: 6px; background: #D91E18; color: #FFFFFF; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.04em; opacity: 0; transform: scale(0.92); transition: opacity 140ms ease, transform 160ms cubic-bezier(0.34, 1.56, 0.64, 1); } .ds-clip-card:hover .ds-clip-tally, .ds-clip-card:focus-visible .ds-clip-tally { opacity: 1; transform: scale(1); } .ds-tally-dot { width: 6px; height: 6px; border-radius: 9999px; background: #FFFFFF; } .ds-clip-progress { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: #D91E18; transform: scaleX(0); transform-origin: left; transition: transform 1.2s linear; } .ds-clip-card:hover .ds-clip-progress { transform: scaleX(0.68); } .ds-clip-meta { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 2px 0; } .ds-clip-title { font-family: Figtree, system-ui, sans-serif; font-size: 13px; font-weight: 500; color: #111113; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .ds-clip-tag { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; font-weight: 600; color: #636266; background: #ECEAE4; padding: 3px 7px; border-radius: 6px; flex-shrink: 0; }"
+    },
+    {
+      "name": "Broken URL Error Tile",
+      "kind": "custom",
+      "refersTo": "video-card-error",
+      "description": "Isolated removable error tile with dashed cut-line border so unplayable CDN links never break the grid.",
+      "html": "<div class=\"ds-error-tile\"><div class=\"ds-error-top\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#B51611\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/><path d=\"M9 9l6 6M15 9l-6 6\"/></svg><span class=\"ds-error-title\">broken-clip-04.mp4</span></div><p class=\"ds-error-msg\">Video could not be loaded from source.</p><div class=\"ds-error-actions\"><button class=\"ds-err-btn\">Retry</button><button class=\"ds-err-btn ds-err-remove\">Remove</button></div></div>",
+      "css": ".ds-error-tile { width: 280px; aspect-ratio: 16 / 9; padding: 14px; border-radius: 10px; background: #FCECEB; border: 1.5px dashed #B51611; display: flex; flex-direction: column; justify-content: space-between; font-family: Figtree, system-ui, sans-serif; } .ds-error-top { display: flex; align-items: center; gap: 8px; color: #B51611; font-size: 13px; font-weight: 600; } .ds-error-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .ds-error-msg { margin: 0; font-size: 12px; color: #4B4A4E; line-height: 1.4; } .ds-error-actions { display: flex; gap: 8px; } .ds-err-btn { padding: 5px 10px; border-radius: 6px; border: 1px solid #B51611; background: #FFFFFF; color: #B51611; font-size: 12px; font-weight: 600; cursor: pointer; } .ds-err-btn:hover { background: #B51611; color: #FFFFFF; } .ds-err-remove { background: transparent; border-color: transparent; } .ds-err-remove:hover { background: #B51611; color: #FFFFFF; }"
+    },
+    {
+      "name": "Top Utility Navigation",
+      "kind": "nav",
+      "refersTo": "button-primary",
+      "description": "Sticky 56px light-table top bar with Parallel wordmark, live count, JSON import/export, and primary + Add Clips pill.",
+      "html": "<header class=\"ds-nav\"><div class=\"ds-nav-left\"><span class=\"ds-mark\" aria-hidden=\"true\"><i></i><i></i></span><span class=\"ds-brand\">Parallel</span><span class=\"ds-count\">48 clips</span></div><div class=\"ds-nav-right\"><button class=\"ds-ghost\">Import</button><button class=\"ds-ghost\">Export</button><button class=\"ds-cta\">+ Add Clips</button></div></header>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; height: 56px; padding: 0 20px; background: rgba(246, 245, 242, 0.92); border-bottom: 1px solid #DCD9D0; font-family: Figtree, system-ui, sans-serif; } .ds-nav-left, .ds-nav-right { display: flex; align-items: center; gap: 10px; } .ds-mark { display: inline-flex; gap: 3px; } .ds-mark i { display: block; width: 4px; height: 16px; border-radius: 2px; background: #D91E18; } .ds-mark i:last-child { background: #111113; } .ds-brand { font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-size: 18px; font-weight: 700; letter-spacing: -0.02em; color: #111113; } .ds-count { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; font-weight: 600; color: #636266; background: #ECEAE4; padding: 4px 8px; border-radius: 6px; } .ds-ghost { height: 34px; padding: 0 12px; border: none; border-radius: 8px; background: transparent; color: #111113; font-size: 14px; font-weight: 600; cursor: pointer; } .ds-ghost:hover { background: #ECEAE4; } .ds-cta { height: 36px; padding: 0 16px; border-radius: 9999px; background: #D91E18; color: #FFFFFF; border: 1.5px solid #111113; box-shadow: 0 2px 0 #111113; font-size: 14px; font-weight: 600; cursor: pointer; } .ds-cta:hover { background: #B51611; }"
+    },
+    {
+      "name": "Bulk URL Paste Input",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Monospace textarea for pasting raw lists of .mp4/.webm direct links with crisp focus treatment.",
+      "html": "<textarea class=\"ds-url-input\" rows=\"3\" placeholder=\"https://cdn.example.com/reel-01.mp4&#10;https://r2.example.com/motion-loop.webm\"></textarea>",
+      "css": ".ds-url-input { width: 100%; max-width: 420px; padding: 12px 14px; border-radius: 10px; border: 1.5px solid #DCD9D0; background: #FFFFFF; color: #111113; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; line-height: 1.6; resize: vertical; transition: border-color 120ms ease, box-shadow 120ms ease; } .ds-url-input::placeholder { color: #636266; } .ds-url-input:focus { outline: none; border-color: #111113; box-shadow: 0 0 0 3px rgba(217, 30, 24, 0.18); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Tally Light Table",
+    "overview": "Parallel translates the tactile precision of a Swiss editing room and physical film light table into a fast, zero-account browser reference board. Most video tools default to heavy dark-slate toolbars that smother footage or generic social feeds full of chrome. Parallel flips the dynamic: at rest, the board is a crisp, archival off-white light table (paper-canvas) ruled in deep carbon ink (carbon-ink) so 50 to 200+ heterogeneous video clips sit side-by-side with zero visual friction.\n\nPlayfulness lives in kinetic feedback rather than decoration. Borrowing the red \"on-air\" tally light from broadcast monitors and the crisp click of hardware transport keys, a single Tally Red (tally-red) accent wakes up only when the user engages: hovering a clip illuminates its frame, flips on a live 2x tally pill, and runs a 3px progress hairline along the bottom edge. Because only one clip plays at a time, the red tally becomes a moving spotlight that follows the user's eye across the grid. Clicking any clip dims the workspace into an Obsidian Screening Room (screening-black) for distraction-free 1x playback with audio.",
+    "keyCharacteristics": [
+      "Videos are the interface: Compact 104px combined top chrome puts playable footage in the first viewport immediately.",
+      "Minimal at rest, playful in motion: Quiet neutral surfaces pair with tactile pill buttons, crisp ink lips, and an unmistakable red 2x tally state.",
+      "Two-room contrast: Archival light-table browsing (#F6F5F2) transitions cleanly into an obsidian cinema lightbox (#0E0E10) on click.",
+      "Accessible by structure: High-contrast ink-on-paper typography, tabular monospace indicators, visible focus rings, and touch-first mobile fallbacks."
+    ],
+    "rules": [
+      {
+        "name": "The 85/12/3 Tally Rule",
+        "body": "Keep 85% of every viewport in light-table neutrals, 12% in Carbon Ink for text and active pills, and at most 3% in Tally Red. Red's rarity is what makes the single active 2x clip jump off the grid instantly.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Room Rule",
+        "body": "Never mix dark cinema chrome into the light-table grid, and never open a white modal over a playing 1x video. Browsing belongs on paper-canvas; sound-on inspection belongs in screening-black.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Count Rule",
+        "body": "Every counter, playback rate (2x, 1x), and timecode uses JetBrains Mono with font-variant-numeric: tabular-nums so numbers never shift width when filters or loops update.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-By-Default Rule",
+        "body": "Video cards carry zero drop shadow at rest. Elevation appears only on the single active hovered card or modal overlays, keeping a 200-clip grid visually calm and GPU-light.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep video frames completely free of permanent text overlays, dark gradients, or player controls at rest so clips lead from pixel one.",
+      "Do enforce single-active 2x hover playback with Tally Red (#D91E18) border, 2x badge, and 3px progress hairline—and immediately reset currentTime = 0 on pointer leave.",
+      "Do rely on native <video preload=\"metadata\"> gated by IntersectionObserver for thumbnails instead of <canvas> frame extraction.",
+      "Do isolate broken or unplayable video URLs inside removable dashed red error tiles without interrupting neighboring clips.",
+      "Do maintain a 44px x 44px minimum touch target on mobile controls and show the resting play indicator on @media (hover: none) devices.",
+      "Do honor prefers-reduced-motion: reduce by removing hover lifts and badge spring animations while keeping explicit 2x/1x video playback intact."
+    ],
+    "donts": [
+      "Don't add a marketing hero section, login button, search bar, or multi-select filter drawer above the board in v1.",
+      "Don't flood large backgrounds or card surfaces with Tally Red—keep red under 3% of the viewport so active states stay unmistakable.",
+      "Don't use blurry SaaS drop shadows on resting grid cards or rounded 24px+ corners that crop into video corners.",
+      "Don't open a white modal for 1x video playback; always transition into the obsidian screening-black (#0E0E10) screening room.",
+      "Don't require hover to inspect clips on touch devices; tapping any card on mobile must open the lightbox immediately."
+    ]
+  }
+}
