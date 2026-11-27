@@ -6,7 +6,7 @@ A zero-account, desktop-first video reference light table for rapidly scanning d
 * **Framework:** Next.js (App Router) + React + TypeScript
 * **Styling:** Tailwind CSS v4 + design tokens (`src/styles/design-tokens.css`)
 * **Validation:** Zod
-* **Persistence:** Browser `localStorage` + JSON Export/Import
+* **Persistence:** Browser `localStorage` 
 * **Deployment:** Vercel
 
 ## Local Development
