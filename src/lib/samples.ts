@@ -1,6 +1,6 @@
 import type { VideoItem } from "./schema";
 
-export const SAMPLE_COUNT = 4;
+export const SAMPLE_COUNT = 3;
 
 export function createSampleItems(now: number = Date.now()): VideoItem[] {
   return [
