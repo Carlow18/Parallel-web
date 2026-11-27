@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { AlertCircle, Film, Plus, RotateCcw, Sparkles, Upload } from "lucide-react";
+import { AlertCircle, Film, Plus, RotateCcw, Sparkles } from "lucide-react";
 import { SAMPLE_COUNT } from "@/lib/samples";
 import { parseBulkInput, type VideoItem } from "@/lib/schema";
 
@@ -9,7 +9,6 @@ interface EmptyBoardProps {
   mode: "empty-board";
   onAddItems: (items: VideoItem[], duplicateCount: number) => void;
   onLoadSamples: () => void;
-  onOpenImport: () => void;
 }
 
 interface EmptyFilterProps {
@@ -176,15 +175,6 @@ export function EmptyState(props: EmptyStateProps) {
         >
           <Sparkles className="h-4 w-4 text-[var(--color-tally-red)]" aria-hidden="true" />
           <span>Load {SAMPLE_COUNT} sample clips</span>
-        </button>
-
-        <button
-          type="button"
-          onClick={props.onOpenImport}
-          className="btn-ghost h-10 px-3 text-[var(--color-ink-secondary)] hover:text-[var(--color-carbon-ink)]"
-        >
-          <Upload className="h-4 w-4" aria-hidden="true" />
-          <span>Import JSON board</span>
         </button>
       </div>
     </section>

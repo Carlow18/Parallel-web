@@ -10,8 +10,8 @@ Keeps navigation chrome minimal (`56px` height) so playable footage leads from t
 
 ## Sticky Header (`56px`)
 * **Left:** Authored `Parallel` SVG bar mark with a live hardware-style tally dot (turns Tally Red `#D91E18` while any clip is actively `2×`-scanning on hover), `Bricolage Grotesque` wordmark, and `tabular-nums` clip count badge (`X / Y clips` when filtered, else `Y clips`).
-* **Right (Desktop):** Primary tactile red **+ Add Clips** pill button (`Import / Export JSON` lives cleanly inside that drawer's second tab).
-* **Right (Mobile `< 640px`):** Compact `44px × 44px` `⋯` overflow menu (`Import JSON`, `Export JSON`, `Load sample clips`, two-tap `Clear board`) alongside the `+ Add` button (`min-h-[44px]`).
+* **Right (Desktop):** Primary tactile red **+ Add Clips** pill button (board utilities like `Add Samples`, `Export JSON`, and `Clear Board` sit at the bottom of that modal).
+* **Right (Mobile `< 640px`):** Compact `44px × 44px` `⋯` overflow menu (`Export JSON`, `Load sample clips`, two-tap `Clear board`) alongside the `+ Add` button (`min-h-[44px]`).
 
 ## Accessibility & Browser Surfaces
 * **Focus & Selection:** High-visibility `2px solid #D91E18` `:focus-visible` outline (`2px` offset), Tally Red text `::selection`, and Tally Red `caret-color` inside inputs.

@@ -28,14 +28,10 @@ export function VideoBoardApp() {
     updateItemCategory,
     loadSamples,
     clearBoard,
-    importJson,
   } = useVideoBoard();
 
   const [activeHoverId, setActiveHoverId] = useState<string | null>(null);
-  const [drawerState, setDrawerState] = useState<{
-    open: boolean;
-    tab: "paste" | "import";
-  }>({ open: false, tab: "paste" });
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const [lightboxId, setLightboxId] = useState<string | null>(null);
 
   const existingUrls = useMemo(() => items.map((item) => item.url), [items]);
@@ -48,10 +44,10 @@ export function VideoBoardApp() {
 
   const handleHoverStart = useCallback(
     (id: string) => {
-      if (drawerState.open || lightboxId !== null) return;
+      if (drawerOpen || lightboxId !== null) return;
       setActiveHoverId(id);
     },
-    [drawerState.open, lightboxId]
+    [drawerOpen, lightboxId]
   );
 
   const handleHoverEnd = useCallback((id: string) => {
@@ -63,9 +59,9 @@ export function VideoBoardApp() {
     setLightboxId(id);
   }, []);
 
-  const handleOpenDrawer = useCallback((tab: "paste" | "import") => {
+  const handleOpenDrawer = useCallback(() => {
     setActiveHoverId(null);
-    setDrawerState({ open: true, tab });
+    setDrawerOpen(true);
   }, []);
 
   const handleExportJson = useCallback(() => {
@@ -83,7 +79,7 @@ export function VideoBoardApp() {
     pushToast("success", `Exported ${items.length} clips to JSON.`);
   }, [items, pushToast]);
 
-  const isOverlayOpen = drawerState.open || lightboxId !== null;
+  const isOverlayOpen = drawerOpen || lightboxId !== null;
   const effectiveHoverId = isOverlayOpen ? null : activeHoverId;
 
   return (
@@ -93,8 +89,7 @@ export function VideoBoardApp() {
         filteredCount={filteredItems.length}
         isFiltered={activeFilter !== ALL_FILTER}
         isScanning={effectiveHoverId !== null}
-        onOpenAdd={() => handleOpenDrawer("paste")}
-        onOpenImport={() => handleOpenDrawer("import")}
+        onOpenAdd={handleOpenDrawer}
         onExportJson={handleExportJson}
         onLoadSamples={loadSamples}
         onClearBoard={clearBoard}
@@ -119,7 +114,6 @@ export function VideoBoardApp() {
             mode="empty-board"
             onAddItems={addItems}
             onLoadSamples={loadSamples}
-            onOpenImport={() => handleOpenDrawer("import")}
           />
         ) : filteredItems.length === 0 ? (
           <EmptyState
@@ -140,14 +134,12 @@ export function VideoBoardApp() {
       </main>
 
       <AddLinksDrawer
-        open={drawerState.open}
-        initialTab={drawerState.tab}
+        open={drawerOpen}
         existingUrls={existingUrls}
         knownCategories={knownCategoryNames}
         totalCount={items.length}
-        onClose={() => setDrawerState((prev) => ({ ...prev, open: false }))}
+        onClose={() => setDrawerOpen(false)}
         onAddItems={addItems}
-        onImportJson={importJson}
         onExportJson={handleExportJson}
         onLoadSamples={loadSamples}
         onClearBoard={clearBoard}
