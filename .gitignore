@@ -45,7 +45,7 @@ next-env.d.ts
 /.claude/
 /.pi/
 
-# Impeccable local/runtime caches (keep PRODUCT.md, DESIGN.md, design-tokens.*, .impeccable/design.json)
+# Impeccable local/runtime caches (keep docs/PRODUCT.md, docs/DESIGN.md, src/styles/design-tokens.*, .impeccable/design.json)
 .impeccable/config.local.json
 .impeccable/hook.cache.json
 .impeccable/questions/
