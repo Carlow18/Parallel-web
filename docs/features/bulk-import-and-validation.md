@@ -5,8 +5,8 @@ Lets users paste raw lists of direct video URLs (optionally tagged with categori
 
 ## Source Files
 * `src/lib/schema.ts` (`DirectVideoUrlSchema`, `VideoItemSchema`, `parseBulkInput`, `deriveTitleFromUrl`)
-* `src/components/AddLinksDrawer.tsx`
-* `src/components/EmptyState.tsx`
+* `src/components/modals/AddLinksDrawer.tsx`
+* `src/components/board/EmptyState.tsx`
 
 ## Supported Input Formats
 One entry per line (blank lines are ignored):

@@ -6,7 +6,7 @@ Stores the entire video board locally in the browser with zero accounts or backe
 ## Source Files
 * `src/lib/schema.ts` (`STORAGE_KEY`, `BoardStoreSchema`, `loadBoardFromStorage`, `saveBoardToStorage`, `serializeBoardExport`, `parseBoardImportJson`)
 * `src/hooks/useVideoBoard.ts`
-* `src/components/AddLinksDrawer.tsx` (`Import / Export JSON` tab)
+* `src/components/modals/AddLinksDrawer.tsx` (`Import / Export JSON` tab)
 
 ## Persistence Behavior
 * **Storage key & schema:** Persisted in `localStorage` under `parallel.video-board.v1` as `{ version: 1, items: VideoItem[] }`, validated on read via `BoardStoreSchema.safeParse()`.

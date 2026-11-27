@@ -4,7 +4,7 @@
 Provides a single, lightweight category filter rail pinned directly below the sticky header so users can narrow a large video board in one click without multi-filter or search clutter.
 
 ## Source Files
-* `src/components/CategoryFilterBar.tsx`
+* `src/components/board/CategoryFilterBar.tsx`
 * `src/hooks/useVideoBoard.ts` (`categories`, `activeFilter`, `filteredItems`)
 
 ## User Behavior

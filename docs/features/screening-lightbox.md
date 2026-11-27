@@ -4,8 +4,8 @@
 Full-viewport dark screening room (`#0E0E10`) for inspecting any clip at normal `1×` speed with sound, native controls, speed adjustments, and quick metadata/organization actions.
 
 ## Source Files
-* `src/components/LightboxModal.tsx`
-* `src/components/VideoBoardApp.tsx`
+* `src/components/modals/LightboxModal.tsx`
+* `src/components/board/VideoBoardApp.tsx`
 
 ## User Behavior
 * **Two-Room Contrast:** Opening a clip dims the entire viewport into `rgba(14, 14, 16, 0.96)` so bright and dark footage can be evaluated without light-table chrome distracting the eye.

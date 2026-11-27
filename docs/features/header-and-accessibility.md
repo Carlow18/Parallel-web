@@ -4,7 +4,7 @@
 Keeps navigation chrome minimal (`56px` height) so playable footage leads from the first viewport, while enforcing WCAG AA+ contrast, keyboard accessibility, and reduced-motion preferences across the entire app.
 
 ## Source Files
-* `src/components/BoardHeader.tsx`
+* `src/components/board/BoardHeader.tsx`
 * `src/app/globals.css`
 * `src/app/layout.tsx`
 

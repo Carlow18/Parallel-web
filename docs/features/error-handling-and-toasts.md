@@ -4,8 +4,8 @@
 Isolates dead, hotlink-blocked, or unsupported video links into recoverable error tiles so one bad URL never breaks the grid, and communicates board actions through compact semantic toast notifications.
 
 ## Source Files
-* `src/components/VideoCard.tsx` (error tile variant)
-* `src/components/ToastStack.tsx`
+* `src/components/board/VideoCard.tsx` (error tile variant)
+* `src/components/ui/ToastStack.tsx`
 * `src/hooks/useVideoBoard.ts` (`toasts`, `pushToast`, `dismissToast`)
 * `src/app/layout.tsx` (`referrer: "no-referrer"`)
 

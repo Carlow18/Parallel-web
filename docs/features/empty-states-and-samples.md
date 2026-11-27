@@ -4,9 +4,9 @@
 Guides first-time visitors straight into pasting links or testing `2×` hover-autoplay with curated direct `.mp4` sample clips, and provides a clean recovery path when a category filter has no matches.
 
 ## Source Files
-* `src/components/EmptyState.tsx`
+* `src/components/board/EmptyState.tsx`
 * `src/lib/samples.ts` (`createSampleItems`, `SAMPLE_COUNT`)
-* `src/components/VideoGrid.tsx` (`VideoGridSkeleton`)
+* `src/components/board/VideoGrid.tsx` (`VideoGridSkeleton`)
 
 ## States
 * **Hydration Skeleton (`VideoGridSkeleton`):** Displays 8 pulsing `16:9` `surface-well` (`#ECEAE4`) placeholder tiles during initial client hydration so the layout stays stable.

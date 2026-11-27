@@ -4,9 +4,9 @@
 Displays direct video links in a uniform `16:9` responsive grid built for rapid visual scanning on desktop, with instant `2×` muted hover previews, hover-only quick deletion, and a clean tap fallback on touch devices.
 
 ## Source Files
-* `src/components/VideoGrid.tsx`
-* `src/components/VideoCard.tsx`
-* `src/components/VideoBoardApp.tsx`
+* `src/components/board/VideoGrid.tsx`
+* `src/components/board/VideoCard.tsx`
+* `src/components/board/VideoBoardApp.tsx`
 * `src/app/globals.css` (`.parallel-grid`, `.video-card-frame`, `.touch-play-indicator`)
 
 ## User Behavior
