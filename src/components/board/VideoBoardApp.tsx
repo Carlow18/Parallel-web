@@ -3,12 +3,12 @@
 import { useCallback, useMemo, useState } from "react";
 import { ALL_FILTER, serializeBoardExport } from "@/lib/schema";
 import { useVideoBoard } from "@/hooks/useVideoBoard";
-import { AddLinksDrawer } from "./AddLinksDrawer";
+import { AddLinksDrawer } from "@/components/modals/AddLinksDrawer";
+import { LightboxModal } from "@/components/modals/LightboxModal";
+import { ToastStack } from "@/components/ui/ToastStack";
 import { BoardHeader } from "./BoardHeader";
 import { CategoryFilterBar } from "./CategoryFilterBar";
 import { EmptyState } from "./EmptyState";
-import { LightboxModal } from "./LightboxModal";
-import { ToastStack } from "./ToastStack";
 import { VideoGrid, VideoGridSkeleton } from "./VideoGrid";
 
 export function VideoBoardApp() {

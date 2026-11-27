@@ -48,6 +48,26 @@ export function useVideoBoard() {
 
   useEffect(() => {
     const { items: loaded, recoveredError } = loadBoardFromStorage();
+    const isLegacyBrokenSample = (item: VideoItem) =>
+      item.isSample === true &&
+      item.url.includes("commondatastorage.googleapis.com/gtv-videos-bucket/");
+
+    if (loaded.some(isLegacyBrokenSample)) {
+      const userAndValid = loaded.filter((item) => !isLegacyBrokenSample(item));
+      const existingUrls = new Set(
+        userAndValid.map((item) => normalizeUrl(item.url))
+      );
+      const freshSamples = createSampleItems().filter(
+        (sample) => !existingUrls.has(normalizeUrl(sample.url))
+      );
+      const migrated = [...freshSamples, ...userAndValid];
+      saveBoardToStorage(migrated);
+      setItems(migrated);
+      setHydrated(true);
+      pushToast("success", "Updated sample clips to fresh direct video sources.");
+      return;
+    }
+
     setItems(loaded);
     setHydrated(true);
     if (recoveredError) {

@@ -1,70 +1,33 @@
 import type { VideoItem } from "./schema";
 
+export const SAMPLE_COUNT = 3;
+
 export function createSampleItems(now: number = Date.now()): VideoItem[] {
   return [
     {
-      id: "sample-for-bigger-blazes",
-      url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      id: "sample-lib-5s",
+      url: "https://samplelib.com/mp4/sample-5s.mp4",
       category: "Motion",
-      title: "For Bigger Blazes",
+      title: "Sample 5s Clip",
       isSample: true,
       addedAt: now,
     },
     {
-      id: "sample-for-bigger-escapes",
-      url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+      id: "sample-lib-30s",
+      url: "https://samplelib.com/mp4/sample-30s-360p.mp4",
       category: "Cinema",
-      title: "For Bigger Escapes",
+      title: "Sample 30s 360p",
       isSample: true,
       addedAt: now + 1,
     },
+
     {
-      id: "sample-for-bigger-fun",
-      url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
-      category: "Product",
-      title: "For Bigger Fun",
+      id: "sample-mdn-flower",
+      url: "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+      category: "Nature",
+      title: "Blooming Flower (MDN CC0)",
       isSample: true,
       addedAt: now + 2,
-    },
-    {
-      id: "sample-for-bigger-joyrides",
-      url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-      category: "Motion",
-      title: "For Bigger Joyrides",
-      isSample: true,
-      addedAt: now + 3,
-    },
-    {
-      id: "sample-for-bigger-meltdowns",
-      url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
-      category: "Product",
-      title: "For Bigger Meltdowns",
-      isSample: true,
-      addedAt: now + 4,
-    },
-    {
-      id: "sample-subaru-outback",
-      url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
-      category: "Automotive",
-      title: "Subaru Outback On Street & Dirt",
-      isSample: true,
-      addedAt: now + 5,
-    },
-    {
-      id: "sample-bullrun",
-      url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
-      category: "Automotive",
-      title: "We Are Going On Bullrun",
-      isSample: true,
-      addedAt: now + 6,
-    },
-    {
-      id: "sample-big-buck-bunny",
-      url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-      category: "Cinema",
-      title: "Big Buck Bunny",
-      isSample: true,
-      addedAt: now + 7,
     },
   ];
 }

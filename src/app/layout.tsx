@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   title: "Parallel — Video Reference Light Table",
   description:
     "Zero-account studio light table for instant 2x hover-scanning over direct video links and 1x screening inspection.",
+  referrer: "no-referrer",
 };
 
 export default function RootLayout({

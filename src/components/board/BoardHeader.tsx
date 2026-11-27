@@ -89,26 +89,6 @@ export function BoardHeader({
         </div>
 
         <div className="flex items-center gap-2">
-          <div className="hidden items-center gap-1 sm:flex">
-            <button
-              type="button"
-              onClick={onOpenImport}
-              className="btn-ghost h-9 px-3 text-[var(--color-ink-secondary)] hover:text-[var(--color-carbon-ink)]"
-            >
-              <Upload className="h-4 w-4" aria-hidden="true" />
-              <span>Import</span>
-            </button>
-            <button
-              type="button"
-              onClick={onExportJson}
-              disabled={totalCount === 0}
-              className="btn-ghost h-9 px-3 text-[var(--color-ink-secondary)] hover:text-[var(--color-carbon-ink)]"
-            >
-              <Download className="h-4 w-4" aria-hidden="true" />
-              <span>Export</span>
-            </button>
-          </div>
-
           <div ref={menuRef} className="relative sm:hidden">
             <button
               type="button"
