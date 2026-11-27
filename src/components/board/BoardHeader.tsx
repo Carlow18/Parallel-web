@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Download, MoreHorizontal, Plus, Sparkles, Trash2, Upload } from "lucide-react";
+import { Download, MoreHorizontal, Plus, Sparkles, Trash2 } from "lucide-react";
 
 interface BoardHeaderProps {
   totalCount: number;
@@ -9,7 +9,6 @@ interface BoardHeaderProps {
   isFiltered: boolean;
   isScanning: boolean;
   onOpenAdd: () => void;
-  onOpenImport: () => void;
   onExportJson: () => void;
   onLoadSamples: () => void;
   onClearBoard: () => void;
@@ -21,7 +20,6 @@ export function BoardHeader({
   isFiltered,
   isScanning,
   onOpenAdd,
-  onOpenImport,
   onExportJson,
   onLoadSamples,
   onClearBoard,
@@ -105,18 +103,6 @@ export function BoardHeader({
                 role="menu"
                 className="absolute right-0 top-[50px] z-[var(--z-popover)] w-52 rounded-[var(--radius-card)] border border-[var(--color-hairline-border)] bg-[var(--color-surface-card)] p-1.5 shadow-[var(--shadow-drawer)]"
               >
-                <button
-                  type="button"
-                  role="menuitem"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    onOpenImport();
-                  }}
-                  className="flex min-h-[40px] w-full items-center gap-2.5 rounded-[var(--radius-control)] px-3 text-left text-[14px] font-medium text-[var(--color-carbon-ink)] hover:bg-[var(--color-surface-well)]"
-                >
-                  <Upload className="h-4 w-4 text-[var(--color-ink-secondary)]" />
-                  <span>Import JSON</span>
-                </button>
                 <button
                   type="button"
                   role="menuitem"

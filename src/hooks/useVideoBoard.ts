@@ -8,7 +8,6 @@ import {
   loadBoardFromStorage,
   normalizeCategory,
   normalizeUrl,
-  parseBoardImportJson,
   saveBoardToStorage,
   type VideoItem,
 } from "@/lib/schema";
@@ -221,48 +220,6 @@ export function useVideoBoard() {
     pushToast("success", "Board cleared.");
   }, [persist, pushToast]);
 
-  const importJson = useCallback(
-    (rawText: string, mode: "merge" | "replace"): { ok: boolean; error?: string } => {
-      const parsed = parseBoardImportJson(rawText);
-      if (!parsed.ok) {
-        pushToast("error", parsed.error);
-        return { ok: false, error: parsed.error };
-      }
-
-      if (mode === "replace") {
-        persist(() => parsed.items);
-        setActiveFilter(ALL_FILTER);
-        pushToast(
-          parsed.skippedCount > 0 ? "warning" : "success",
-          parsed.skippedCount > 0
-            ? `Imported ${parsed.items.length} clips (${parsed.skippedCount} invalid skipped).`
-            : `Board replaced with ${parsed.items.length} clips.`
-        );
-        return { ok: true };
-      }
-
-      const existing = new Set(items.map((item) => normalizeUrl(item.url)));
-      const unique = parsed.items.filter(
-        (item) => !existing.has(normalizeUrl(item.url))
-      );
-      const dupes = parsed.items.length - unique.length;
-
-      if (unique.length > 0) {
-        persist((prev) => [...unique, ...prev]);
-      }
-
-      const skippedTotal = dupes + parsed.skippedCount;
-      pushToast(
-        skippedTotal > 0 ? "warning" : "success",
-        unique.length > 0
-          ? `Imported ${unique.length} new ${unique.length === 1 ? "clip" : "clips"}${skippedTotal > 0 ? ` · ${skippedTotal} skipped` : ""}.`
-          : "All clips in that JSON file are already on your board."
-      );
-      return { ok: true };
-    },
-    [items, persist, pushToast]
-  );
-
   return {
     items,
     hydrated,
@@ -279,6 +236,5 @@ export function useVideoBoard() {
     updateItemCategory,
     loadSamples,
     clearBoard,
-    importJson,
   };
 }
