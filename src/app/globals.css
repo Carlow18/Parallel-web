@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "../../design-tokens.css";
+@import "../styles/design-tokens.css";
 
 @theme inline {
   --color-tally-red: var(--color-tally-red);

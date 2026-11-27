@@ -1,4 +1,4 @@
-import { VideoBoardApp } from "@/components/VideoBoardApp";
+import { VideoBoardApp } from "@/components/board/VideoBoardApp";
 
 export default function HomePage() {
   return <VideoBoardApp />;
