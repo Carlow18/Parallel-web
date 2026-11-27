@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { AlertCircle, Film, Plus, RotateCcw, Sparkles, Upload } from "lucide-react";
+import { SAMPLE_COUNT } from "@/lib/samples";
 import { parseBulkInput, type VideoItem } from "@/lib/schema";
 
 interface EmptyBoardProps {
@@ -174,7 +175,7 @@ export function EmptyState(props: EmptyStateProps) {
           className="btn-secondary h-10 px-4"
         >
           <Sparkles className="h-4 w-4 text-[var(--color-tally-red)]" aria-hidden="true" />
-          <span>Load 8 sample clips</span>
+          <span>Load {SAMPLE_COUNT} sample clips</span>
         </button>
 
         <button
